@@ -1,7 +1,7 @@
 import { IsEmail, IsNotEmpty, MinLength, MaxLength } from 'class-validator';
 import { role } from '@prisma/client';
 import { ApiProperty } from '@nestjs/swagger';
-import { CreateProductDto } from 'src/modules/product/dto/create-product.dto';
+import { CreateProductDto } from '../../product/dto/create-product.dto';
 
 export class CreateUserDto {
   @ApiProperty({

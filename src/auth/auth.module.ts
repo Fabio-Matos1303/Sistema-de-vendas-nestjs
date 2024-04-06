@@ -4,10 +4,10 @@ import { AuthService } from './auth.service';
 import { JwtStrategy } from './jwt.strategy';
 import { PassportModule } from '@nestjs/passport';
 import { JwtModule } from '@nestjs/jwt';
-import { LoginModule } from 'src/modules/login/login.module';
-import { LoginRepository } from 'src/modules/login/repository/login.repository';
-import { PrismaService } from 'src/prisma/prisma.service';
-import { RolesGuard } from 'src/guards/roles.guard';
+import { LoginModule } from '../modules/login/login.module';
+import { LoginRepository } from '../modules/login/repository/login.repository';
+import { PrismaService } from '../prisma/prisma.service';
+import { RolesGuard } from '../guards/roles.guard';
 
 @Module({
   imports: [

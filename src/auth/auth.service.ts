@@ -1,7 +1,7 @@
 /* eslint-disable prettier/prettier */
 import { Injectable, UnauthorizedException } from '@nestjs/common';
 import { JwtService } from '@nestjs/jwt';
-import { LoginRepository } from 'src/modules/login/repository/login.repository';
+import { LoginRepository } from '../modules/login/repository/login.repository';
 import { sign } from 'jsonwebtoken'
 
 @Injectable()
